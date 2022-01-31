@@ -1,11 +1,12 @@
+
+* {box-sizing: border-box;}
+
 body {
-   margin: 0;
-   min-height: 100vh;
-   align-items: center;
-   background-color: lightgray;
+background-color: lightgray;
 }
 
-/*-----------Navigation Menu----------- */
+
+/*navbar*/
 @media all and (max-width: 600px) {
    .navbar {
      flex-wrap: wrap;
@@ -26,13 +27,14 @@ body {
       order: 2;
    }
  }
-
+ 
 .navbar{
    box-sizing: border-box;
    margin: 0;
    background-color: #24252A;
    display: flex;
    justify-content: flex-end;
+   flex-wrap: wrap;
    align-items: center;
    padding: 10px 2%;
 }
@@ -67,38 +69,42 @@ button:hover{
    background-color: rgba(0,136,169,0.8);
 }
 img {
-width: 100%;
+max-width: 100%;
 }
 
-/*Text with divs */
+/*ContactUs*/
 
-.MainTitle{
-   text-align: center;
-   text-decoration: underline;
+h1, h2, strong {
+   font-weight: 700;
 }
 
-.grid1{
+.contact-form{
+   max-width: 50%;
+}
+.btn-primary {
+   background: #FFE600;
+   color: #000;
+   justify-self: start;
+}
+
+
+.contact-form{
    display: grid;
-   grid-template-columns: 1100px 300px;
 }
 
-
-.grid2{
-   display: grid;
-   grid-template-columns: 1100px 300px;
+label {
+   font-weight: 700;
+}
+input,
+textarea {
+    margin-bottom: .5em;
 }
 
-.grid3{
-   display: grid;
-   grid-template-columns: 300px 1100px;
-   
+textarea {
+   margin-bottom: .75em;
+   padding: .4em;
+   font-family: inherit;
 }
-
-.one{
-padding: 10px;
-}
-
-
 
 /*-------------------Footer------------------*/
 .footer{
